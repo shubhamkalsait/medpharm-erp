@@ -79,24 +79,6 @@ A production-grade **Medical Domain B2B ERP** for hospitals, distributors, and a
 └── docs/               # Deployment & architecture guides
 ```
 
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [docs/README.md](docs/README.md) | Index of all guides |
-| [docs/MANUAL_DEPLOYMENT.md](docs/MANUAL_DEPLOYMENT.md) | Run services locally without Docker |
-| [docs/DOCKER_DEPLOYMENT.md](docs/DOCKER_DEPLOYMENT.md) | Docker Compose |
-| [docs/KUBERNETES_DEPLOYMENT.md](docs/KUBERNETES_DEPLOYMENT.md) | Kubernetes / EKS |
-| [docs/TERRAFORM_DEPLOYMENT.md](docs/TERRAFORM_DEPLOYMENT.md) | AWS infrastructure |
-| [docs/JENKINS_DEPLOYMENT.md](docs/JENKINS_DEPLOYMENT.md) | CI/CD pipelines |
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Service boundaries & data flows |
-
-## Quick Start
-
-1. **Local (no Docker):** [MANUAL_DEPLOYMENT.md](docs/MANUAL_DEPLOYMENT.md) — use app URLs with `/#/` (HashRouter), e.g. `http://localhost:5173/#/login`.
-2. **Docker Compose ([DOCKER_DEPLOYMENT.md](docs/DOCKER_DEPLOYMENT.md)):** runs **user, product, and order** APIs only; uses **MongoDB Atlas** via `.env`; the **frontend is deployed separately** (S3 + CloudFront).
-3. **Kubernetes:** [KUBERNETES_DEPLOYMENT.md](docs/KUBERNETES_DEPLOYMENT.md)
-4. **Terraform (AWS):** [TERRAFORM_DEPLOYMENT.md](docs/TERRAFORM_DEPLOYMENT.md)
 
 ## Prerequisites
 
