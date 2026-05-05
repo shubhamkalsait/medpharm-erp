@@ -11,23 +11,37 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: "/user"
+        path: "/api/v1/auth"
         backend:
           service:
             name: user-service
             port: 
               number: 8081
       - pathType: Prefix
-        path: "/product"
+        path: "/api/v1/users"
+        backend:
+          service:
+            name: user-service
+            port: 
+              number: 8081
+      - pathType: Prefix
+        path: "/api/v1/organizations"
+        backend:
+          service:
+            name: user-service
+            port: 
+              number: 8081
+      - pathType: Prefix
+        path: "/api/v1/products"
         backend:
           service:
             name: product-service
             port: 
-              number: 8081
+              number: 8082
       - pathType: Prefix
-        path: "/order"
+        path: "/api/v1/orders"
         backend:
           service:
             name: order-service
             port: 
-              number: 8081
+              number: 8083
