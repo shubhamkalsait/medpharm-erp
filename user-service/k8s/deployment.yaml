@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: user-service
-        image: ECRIMAGE
+        image: 728735520903.dkr.ecr.ap-southeast-2.amazonaws.com/users-service:latest
         ports:
         - containerPort: 8081
         resources:
