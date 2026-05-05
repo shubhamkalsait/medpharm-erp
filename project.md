@@ -35,3 +35,6 @@ Connections String: mongodb+srv://cloudblitz:redhat@cluster0.1msw0d5.mongodb.net
 
 
 
+ 10.100.17.156    <none>        8083/TCP   11s
+product-service   ClusterIP   10.100.169.205   <none>        8082/TCP   22s
+user-service      ClusterIP   10.100.28.126 

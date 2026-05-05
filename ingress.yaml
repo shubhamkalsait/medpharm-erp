@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: medpharma-erp
+  labels:
+    app.kubernetes.io/name: medpharma-erp-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: a747ff2f32f01499e8d5469c24a5ddd6-875507412.ap-southeast-2.elb.amazonaws.com 
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/user"
+        backend:
+          service:
+            name: user-service
+            port: 
+              number: 8081
+      - pathType: Prefix
+        path: "/product"
+        backend:
+          service:
+            name: product-service
+            port: 
+              number: 8081
+      - pathType: Prefix
+        path: "/order"
+        backend:
+          service:
+            name: order-service
+            port: 
+              number: 8081
