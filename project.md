@@ -8,7 +8,8 @@ Database (MongoDB)
 Prerequisite:
 
 AWS Services: S3, EKS, EC2, AS, LB, VPC, CloudFront, Route53, ECR, IAM
-Docker Host, kubectl, aws-cli, eks-cluster, s3 bucket, domain name
+DevOps: Docker Host, kubectl, aws-cli, eks-cluster, s3 bucket, domain name
+Environment: java-17, maven, Nodejs, npm
 
 Branching Strategy:
     Feature
@@ -30,11 +31,7 @@ Credentials:
 
 Connections String: mongodb+srv://cloudblitz:redhat@cluster0.1msw0d5.mongodb.net/?appName=Cluster0
 
+----
 
-Understand the deployment:
-- java, maven, source code
-- application.properties
-- mvn clean package
-- java -jar
-- DockerFiles
+
 
