@@ -8,4 +8,4 @@ RUN mvn clean package -DskipTest
 
 EXPOSE 8081
 
-ENTRYPOINT [ "java", "-jar", "target/*.jar" ]
+ENTRYPOINT [ "java", "-jar", "target/user-service-1.0.0.jar" ]
