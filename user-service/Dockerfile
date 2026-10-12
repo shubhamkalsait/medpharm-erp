@@ -4,7 +4,7 @@ WORKDIR /opt
 
 COPY . .
 
-RUN mvn clean package -DskipTest
+RUN mvn clean package -DskipTests
 
 EXPOSE 8081
 
