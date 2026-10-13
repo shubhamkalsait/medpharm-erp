@@ -8,7 +8,7 @@ spring:
     name: order-service
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb+srv://linux:redhat@cluster0.32n20bl.mongodb.net/orders_db?retryWrites=true&w=majority&appName=Cluster0}
+      uri: mongodb+srv://shubham:redhat@edublitz.laegfsa.mongodb.net/orders_db?appName=edublitz
       database: orders_db
   jackson:
     default-property-inclusion: non_null
@@ -39,6 +39,6 @@ cors:
 
 services:
   product-service:
-    base-url: ${PRODUCT_SERVICE_URL:http://localhost:8082/api/v1}
+    base-url: ${PRODUCT_SERVICE_URL:http://18.216.226.33:8082/api/v1}
   user-service:
-    base-url: ${USER_SERVICE_URL:http://localhost:8081/api/v1}
+    base-url: ${USER_SERVICE_URL:http://18.216.226.33:8081/api/v1}
